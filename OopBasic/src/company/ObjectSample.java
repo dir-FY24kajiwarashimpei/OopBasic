@@ -12,6 +12,14 @@ public class ObjectSample {
         employee.report();
         employee.report(2);
         
+        //１行開ける
+        System.out.println("");
+        
+        //インスタンスの作成
+        Employee engineer = new Employee("田中", "開発部", "一般社員", 88);
+        
+        //インスタンスメソッドの呼び出し
+        engineer.report();
     }
 
 }
