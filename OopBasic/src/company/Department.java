@@ -24,6 +24,11 @@ public class Department {
         return name;      
     }
     
+    //budgetのgetter 
+    public double getBudget() {
+        return budget;
+    }
+    
     //budgetのsetter
     public void setBudget(int budget) {
         if(budget < 0) {
