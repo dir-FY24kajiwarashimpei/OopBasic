@@ -29,7 +29,7 @@ public class Employee {
     
     //会議に参加するメソッド
     public void joinMeeting() {
-        department.meeting():
+        department.meeting();
         System.out.println("→上記の会議に参加します。 部署 : " + department.getName() + "名前 : " + name);
     }
 }
