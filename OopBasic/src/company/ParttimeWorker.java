@@ -1,22 +1,18 @@
 package company;
 
-import java.lang.invoke.StringConcatFactory;
-
 public class ParttimeWorker implements Workable{
-    //フィールド
+    // フィールド
     protected final String name;
     private final Department department;
-    
-    //コンストラクター
+
+    // コンストラクター
     public ParttimeWorker(String name, Department department) {
         this.name = name;
         this.department = department;
     }
     
-    //働くメソッドを定義
-    @Override
+    // 働くメソッドを実装
     public void work() {
-        System.out.println("アルバイトとして働きます。 名前 ： " + name + slogan);
+        System.out.println("アルバイトとして働きます。名前：" + name + slogan);
     }
-
 }

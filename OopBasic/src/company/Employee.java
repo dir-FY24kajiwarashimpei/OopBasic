@@ -2,7 +2,7 @@ package company;
 
 import java.lang.invoke.StringConcatFactory;
 
-public class Employee {
+public class Employee implements Workable {
     //フィールド
     protected final String name;
     private final Department department;
@@ -31,6 +31,11 @@ public class Employee {
     public void joinMeeting() {
         department.meeting();
         System.out.println("→上記の会議に参加します。 部署 : " + department.getName() + "、 名前 : " + name);
+    }
+    
+    //働くメソッドを実装
+    public void work() {
+        System.out.println("正社員として働きます。 名前 ： " + name + slogan);
     }
 }
 
