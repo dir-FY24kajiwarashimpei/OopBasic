@@ -2,7 +2,7 @@ package company;
 
 import java.util.jar.Attributes.Name;
 
-public class Engineer {
+public class Engineer extends Employee{
     String programmingLanguage;
 
     public Engineer(String name, Department department, String position, int employeeId, String programmingLanguage) {
@@ -11,7 +11,7 @@ public class Engineer {
     }
 
     public void developSoftware() {
-        System.out.println("ソフトウェアを開発します。 名前 ： " + name + "プログラミング言語 ： " + programmingLanguage);
+        System.out.println("ソフトウェアを開発します。 名前 ： " + name + "、 プログラミング言語 ： " + programmingLanguage);
     }
 
 //会議に参加するメソッドをオーバーライド

@@ -16,7 +16,7 @@ public class Department {
     
     //会議を開催する
     public void meeting() {
-        System.out.println("部内会議を開催します。 部署 ； " + name + "予算" + budget);
+        System.out.println("部内会議を開催します。 部署 ； " + name + "、 予算 ： " + budget);
     }
     
     //nameのgetter
