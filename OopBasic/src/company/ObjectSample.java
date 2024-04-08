@@ -27,6 +27,19 @@ public class ObjectSample {
         engineer.report();
         engineer.joinMeeting();
         engineer.developSoftware();
+        
+        
+        //ポリモーフィズムの確認
+        Employee projectManager = new Engineer("佐藤", devDepartment, "PM", 99, "Java");
+        
+        //インスタンスメソッドの呼び出し
+        projectManager.report();
+        projectManager.joinMeeting();
+        if (projectManager instanceof Engineer) {
+            //developSoftwareメソッドを呼び出す
+            ((Engineer) projectManager).developSoftware();
+        }
+        
     }
 
 }
